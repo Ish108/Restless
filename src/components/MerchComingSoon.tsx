@@ -49,12 +49,8 @@ export default function MerchComingSoon() {
       id="merch" 
       ref={sectionRef}
       aria-label="Restless Merchandise Coming Soon"
-      className="w-full relative py-40 overflow-hidden bg-black flex flex-col items-center justify-center min-h-screen border-t border-white/10"
+      className="w-full relative py-40 overflow-hidden bg-brand-dark flex flex-col items-center justify-center min-h-screen border-t border-white/10"
     >
-      {/* Dynamic Noise & Gradient Background for Premium Feel */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none opacity-40 mix-blend-screen bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-red/20 blur-[200px] rounded-full pointer-events-none" />
-
       {/* Infinite Marquee Background */}
       <div className="absolute top-20 left-0 w-[200%] whitespace-nowrap opacity-5 select-none pointer-events-none flex" aria-hidden="true">
         <div ref={marqueeRef} className="text-[15vw] font-black uppercase tracking-tighter text-white flex">
