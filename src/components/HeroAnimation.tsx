@@ -40,10 +40,13 @@ export default function HeroAnimation() {
       const img = images[animationState.frame];
       if (!img || !img.width) return;
       
-      // Calculate scale to cover the viewport seamlessly
-      const scale = Math.max(width / img.width, height / img.height);
+      // Calculate scale to "contain" the image inside the viewport to preserve 9:16 ratio
+      const scale = Math.min(width / img.width, height / img.height);
       const x = (width / 2) - (img.width / 2) * scale;
       const y = (height / 2) - (img.height / 2) * scale;
+      
+      // Explicitly disable image smoothing for raw pixel sharpness on pre-compressed frames
+      context.imageSmoothingEnabled = false;
       
       context.drawImage(img, x, y, img.width * scale, img.height * scale);
     }
@@ -93,7 +96,7 @@ export default function HeroAnimation() {
 
   return (
     <div ref={containerRef} className="relative w-full h-screen bg-brand-dark overflow-hidden">
-      <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full object-cover z-0" />
+      <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0" />
       
       {/* Overlay Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 pointer-events-none bg-black/30">
