@@ -57,7 +57,7 @@ export default function HeroAnimation() {
       scrollTrigger: {
         trigger: containerRef.current,
         start: 'top top',
-        end: '+=400%',
+        end: '+=150%', // Significantly reduced from 400% so the animation finishes in fewer scrolls
         scrub: 0.5, // Faster scrub for a more responsive and smoother feel
         pin: true,
       }
