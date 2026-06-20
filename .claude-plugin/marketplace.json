@@ -215,6 +215,182 @@
         "./release-it",
         "./high-perf-browser"
       ]
+    },
+    {
+      "name": "ui-frontend-design",
+      "description": "UI and Frontend Design skills including frontend direction, canvas design, algorithmic art, and design auditing.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["ui", "frontend", "design", "canvas", "algorithmic-art", "audit"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./frontend-design",
+        "./canvas-design",
+        "./algorithmic-art",
+        "./design-auditor"
+      ]
+    },
+    {
+      "name": "writing-content",
+      "description": "Writing and Content Quality skills including humanizer and beautiful prose generation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["writing", "content", "prose", "humanizer"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./humanizer",
+        "./beautiful-prose"
+      ]
+    },
+    {
+      "name": "marketing-email",
+      "description": "Marketing and Email skills including direct-response marketing, marketing module, email marketing bible, and Twitter algorithm optimizer.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["marketing", "email", "direct-response", "twitter", "ads"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./direct-response-marketing-suite",
+        "./marketing-module",
+        "./email-marketing-bible",
+        "./twitter-algorithm-optimizer",
+        "./competitive-ads-extractor"
+      ]
+    },
+    {
+      "name": "research",
+      "description": "Research skills including academic research and evidence-based dialogue.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["research", "academic", "evidence-based"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./academic-research-skills",
+        "./evidence-based-dialogue"
+      ]
+    },
+    {
+      "name": "knowledge-productivity",
+      "description": "Knowledge and Productivity skills including Daydream and Vexor semantic search.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["knowledge", "productivity", "semantic-search", "daydream"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./daydream",
+        "./vexor-semantic-search"
+      ]
+    },
+    {
+      "name": "image-design",
+      "description": "Image and Design Tools including color expert, hand-drawn diagrams, Claude design skills (3D & Motion), and GPT Image.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["image", "design", "color", "diagrams", "3d", "motion", "gpt-image"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./color-expert",
+        "./hand-drawn-diagrams",
+        "./claude-design-skills-3d-motion",
+        "./gpt-image"
+      ]
+    },
+    {
+      "name": "engineering-development",
+      "description": "Engineering and Development skills including autoresearch, superpowers, repomix, agent skills (Vue/Vite), skill seekers, and web scraper.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "engineering",
+      "keywords": ["engineering", "development", "vue", "vite", "web-scraper", "repomix"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./autoresearch",
+        "./superpowers",
+        "./repomix",
+        "./agent-skills-vue-vite",
+        "./skill-seekers",
+        "./web-scraper"
+      ]
+    },
+    {
+      "name": "social-media-content",
+      "description": "Social Media and Content skills including TweetClaw, X Article Publisher, and components of the Social Media Content OS.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wondel.ai",
+        "url": "https://wondel.ai"
+      },
+      "homepage": "https://github.com/wondelai/skills",
+      "repository": "https://github.com/wondelai/skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["social-media", "content", "twitter", "x", "hooks", "thumbnails", "reels"],
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./tweetclaw",
+        "./x-article-publisher",
+        "./voice-builder",
+        "./reels-scripting",
+        "./post-scorer",
+        "./youtube-thumbnail",
+        "./hook-generator"
+      ]
     }
   ]
 }
