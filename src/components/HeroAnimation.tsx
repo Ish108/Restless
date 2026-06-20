@@ -41,8 +41,8 @@ export default function HeroAnimation() {
       const img = images[animationState.frame];
       if (!img || !img.width) return;
       
-      // Calculate scale to "contain" the image inside the viewport without stretching it and ruining quality
-      const scale = Math.min(width / img.width, height / img.height);
+      // Calculate scale to "cover" the viewport for seamless edge-to-edge
+      const scale = Math.max(width / img.width, height / img.height);
       const x = (width / 2) - (img.width / 2) * scale;
       const y = (height / 2) - (img.height / 2) * scale;
       
@@ -58,7 +58,7 @@ export default function HeroAnimation() {
         trigger: containerRef.current,
         start: 'top top',
         end: '+=400%',
-        scrub: 1,
+        scrub: 0.5, // Faster scrub for a more responsive and smoother feel
         pin: true,
       }
     });
@@ -71,7 +71,8 @@ export default function HeroAnimation() {
     });
 
     const handleResize = () => {
-      const ratio = window.devicePixelRatio || 1;
+      // Limit pixel ratio to 1.5 to dramatically improve performance on retina screens without losing much quality
+      const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
       const width = window.innerWidth;
       const height = window.innerHeight;
 
