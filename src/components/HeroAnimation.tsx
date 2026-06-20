@@ -32,23 +32,18 @@ export default function HeroAnimation() {
     function render() {
       if (!canvas || !context) return;
       
-      // Use logical dimensions (CSS size) because the context is scaled by devicePixelRatio
-      const width = canvas.clientWidth;
-      const height = canvas.clientHeight;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
       
       context.clearRect(0, 0, width, height);
       
       const img = images[animationState.frame];
       if (!img || !img.width) return;
       
-      // Calculate scale to "contain" the image inside the viewport without stretching it and ruining quality
-      const scale = Math.min(width / img.width, height / img.height);
+      // Calculate scale to cover the viewport seamlessly
+      const scale = Math.max(width / img.width, height / img.height);
       const x = (width / 2) - (img.width / 2) * scale;
       const y = (height / 2) - (img.height / 2) * scale;
-      
-      // Enforce highest quality smoothing
-      context.imageSmoothingEnabled = true;
-      context.imageSmoothingQuality = 'high';
       
       context.drawImage(img, x, y, img.width * scale, img.height * scale);
     }
@@ -57,8 +52,8 @@ export default function HeroAnimation() {
       scrollTrigger: {
         trigger: containerRef.current,
         start: 'top top',
-        end: '+=150%', // Significantly reduced from 400% so the animation finishes in fewer scrolls
-        scrub: 0.5, // Faster scrub for a more responsive and smoother feel
+        end: '+=150%', // Keep the fast scroll 
+        scrub: 0.5, 
         pin: true,
       }
     });
@@ -72,20 +67,19 @@ export default function HeroAnimation() {
 
     const handleResize = () => {
       const ratio = window.devicePixelRatio || 1;
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-
-      // Set the ACTUAL internal resolution of the canvas
-      canvas.width = width * ratio;
-      canvas.height = height * ratio;
       
-      // Set the CSS display size
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
+      // Set the ACTUAL internal resolution of the canvas exactly as requested
+      canvas.width = window.innerWidth * ratio;
+      canvas.height = window.innerHeight * ratio;
+      
+      // Set the CSS display size exactly as requested
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
       
       // Scale the context to ensure drawing operations match the new resolution
       context.scale(ratio, ratio);
       
+      // Initial render after resize
       render();
     };
     window.addEventListener('resize', handleResize);
