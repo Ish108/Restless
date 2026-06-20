@@ -49,7 +49,7 @@ export default function MerchComingSoon() {
       id="merch" 
       ref={sectionRef}
       aria-label="Restless Merchandise Coming Soon"
-      className="w-full relative py-40 overflow-hidden bg-brand-dark flex flex-col items-center justify-center min-h-screen border-t border-white/10"
+      className="w-full relative py-40 overflow-hidden bg-black flex flex-col items-center justify-center min-h-screen"
     >
       {/* Infinite Marquee Background */}
       <div className="absolute top-20 left-0 w-[200%] whitespace-nowrap opacity-5 select-none pointer-events-none flex" aria-hidden="true">
