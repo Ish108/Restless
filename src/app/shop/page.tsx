@@ -11,16 +11,8 @@ const flavors = [
     image: '/images/products/blood-rush.png'
   },
   {
-    id: 'storm-surge',
-    name: 'Storm Surge',
-    color: 'bg-brand-blue',
-    textColor: 'text-brand-blue',
-    description: 'A dark, electrifying blue raspberry blend to power the grind.',
-    image: '/images/products/storm-surge.png'
-  },
-  {
-    id: 'venom-strike',
-    name: 'Venom Strike',
+    id: 'mojito',
+    name: 'Mojito',
     color: 'bg-green-500',
     textColor: 'text-green-500',
     description: 'A toxic sour-apple bite that jolts your senses instantly.',

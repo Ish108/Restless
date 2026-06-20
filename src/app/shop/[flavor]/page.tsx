@@ -23,17 +23,8 @@ const flavorsData: Record<string, {
     price: 399,
     image: '/images/products/blood-rush.png'
   },
-  'storm-surge': {
-    name: 'Storm Surge',
-    color: 'bg-brand-blue',
-    gradient: 'from-brand-blue/20 to-black',
-    textColor: 'text-brand-blue',
-    description: 'A dark, electrifying blue raspberry blend designed to shock your system into overdrive.',
-    price: 399,
-    image: '/images/products/storm-surge.png'
-  },
-  'venom-strike': {
-    name: 'Venom Strike',
+  'mojito': {
+    name: 'Mojito',
     color: 'bg-green-500',
     gradient: 'from-green-500/20 to-black',
     textColor: 'text-green-500',
