@@ -9,7 +9,7 @@ export default function DeliveryPartners() {
   ];
 
   return (
-    <section className="w-full py-20 bg-black flex flex-col items-center justify-center border-t border-b border-white/10 overflow-hidden">
+    <section className="w-full py-20 bg-black flex flex-col items-center justify-center overflow-hidden">
       <div className="container mx-auto px-6">
         
         <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-center mb-16 text-white">

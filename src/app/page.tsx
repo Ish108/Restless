@@ -62,7 +62,7 @@ export default function HomePage() {
       <DeliveryPartners />
 
       {/* Footer */}
-      <footer className="w-full py-12 border-t border-white/10 bg-black text-center">
+      <footer className="w-full py-12 bg-black text-center">
         <p className="text-white/40 text-sm font-bold tracking-widest uppercase">
           &copy; {new Date().getFullYear()} Restless Action Drink. All rights reserved.
         </p>
