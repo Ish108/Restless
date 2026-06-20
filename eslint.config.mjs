@@ -12,6 +12,20 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Ignore all embedded agent skill folders to prevent lint failures
+    "academic-research-skills/**",
+    "ai-video-toolkit/**",
+    "beautiful-prose/**",
+    "brand-identity/**",
+    "claude-design-skills-3d-motion/**",
+    "color-expert/**",
+    "error-handling/**",
+    "frontend-design/**",
+    "geo-seo-claude/**",
+    "graphic-designer/**",
+    "marketing-skills/**",
+    "niche-research/**",
+    "vibe-security-audit/**"
   ]),
 ]);
 

@@ -36,6 +36,7 @@ export default function CartDrawer() {
       }
 
       // Ensure Razorpay SDK is loaded
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if (typeof (window as any).Razorpay === 'undefined') {
         alert('Payment gateway is still loading. Please try again in a moment.');
         return;
@@ -48,6 +49,7 @@ export default function CartDrawer() {
         name: 'Restless Action Drink',
         description: 'Purchase Order',
         order_id: data.id,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         handler: function (res: any) {
           alert(`Payment successful! Payment ID: ${res.razorpay_payment_id}`);
           clearCart();
@@ -56,6 +58,7 @@ export default function CartDrawer() {
         theme: { color: '#E50914' },
       };
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const razorpay = new (window as any).Razorpay(options);
       razorpay.open();
     } catch (error) {

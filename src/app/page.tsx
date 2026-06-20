@@ -41,7 +41,7 @@ export default function HomePage() {
             Fuel for the Underdog
           </h2>
           <p className="text-xl md:text-2xl text-white/70 font-medium max-w-2xl mx-auto leading-relaxed">
-            When the world sleeps, the restless grind. We don't just provide energy; we provide the spark that ignites the storm inside you.
+            When the world sleeps, the restless grind. We don&apos;t just provide energy; we provide the spark that ignites the storm inside you.
           </p>
           <div className="pt-8">
             <Link 
